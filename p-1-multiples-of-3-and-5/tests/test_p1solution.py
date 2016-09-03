@@ -11,5 +11,8 @@ class MyTestCase(unittest.TestCase):
     def test_naive(self):
         self.assertEqual(self.p1solution.naive(), self.EXPECTED_SUM)
 
+    def test_optimize_using_mem(self):
+        self.assertEqual(self.p1solution.optimize_using_mem(), self.EXPECTED_SUM)
+
 if __name__ == '__main__':
     unittest.main()
